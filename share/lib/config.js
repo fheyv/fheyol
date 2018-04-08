@@ -132,9 +132,9 @@ const CONFIG_DEFAULT = {
   color: {
     'gauge-default': '#444',
     'gauge-opacity': '1',
-    'position-tank': 'none',
-    'position-deal': 'none',
-    'position-heal': 'none',
+    'position-tank': 'rgb(0,127,255)',
+    'position-deal': 'rgb(255,0,0)',
+    'position-heal': 'rgb(34,139,34)',
     pld: 'rgb(21, 28, 100)', // Indigo 900 (B -10%)
     war: 'rgb(153, 23, 23)', // Red 900 (B -10%)
     drk: 'rgb(136, 14, 79)', // Pink 900
