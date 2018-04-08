@@ -17,7 +17,7 @@ const CONFIG_DEFAULT = {
     'header-bg': 'rgba(0, 0, 0, 0.5)',
     'dropdown-bg': 'rgba(31, 31, 31, 0.95)',
     'dropdown-fg': '#ddd',
-    'content-bg': url('https://media.giphy.com/media/NOwXcCi1i2Sbe/giphy.gif'), // URL
+    'content-bg':'url('https://media.giphy.com/media/NOwXcCi1i2Sbe/giphy.gif')', // URL
     'content-bg-color': 'rgba(0, 0, 0, 0.5)',
     'content-bg-opacity': 1,
     'content-bg-filter': '',
