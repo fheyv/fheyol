@@ -17,7 +17,7 @@ const CONFIG_DEFAULT = {
     'header-bg': 'rgba(0, 0, 0, 0.5)',
     'dropdown-bg': 'rgba(31, 31, 31, 0.95)',
     'dropdown-fg': '#ddd',
-    'content-bg': 'https://media.giphy.com/media/NOwXcCi1i2Sbe/giphy.gif', // URL
+    'content-bg': url('https://media.giphy.com/media/NOwXcCi1i2Sbe/giphy.gif'), // URL
     'content-bg-color': 'rgba(0, 0, 0, 0.5)',
     'content-bg-opacity': 1,
     'content-bg-filter': '',
@@ -140,12 +140,12 @@ const CONFIG_DEFAULT = {
     drk: 'rgb(0, 127, 255)', // Pink 900
     mnk: 'rgb(255,0,0)', // Orange 500
     drg: 'rgb(63, 81, 181)', // Indigo 500
-    brd: 'rgbrgb(255,0,0)', // Lime 800
-    nin: 'rgbrgb(255,0,0)', // Red 700 // 와! 시바! 진성! 닌자다!
-    smn: 'rgbrgb(255,0,0)', // Green 800
-    blm: 'rgbrgb(255,0,0)', // Deep Purple 400
-    mch: 'rgbrgb(255,0,0)', // Cyan 700
-    rdm: 'rgbrgb(255,0,0)', // Pink 500
+    brd: 'rgb(255,0,0)', // Lime 800
+    nin: 'rgb(255,0,0)', // Red 700 // 와! 시바! 진성! 닌자다!
+    smn: 'rgb(255,0,0)', // Green 800
+    blm: 'rgb(255,0,0)', // Deep Purple 400
+    mch: 'rgb(255,0,0)', // Cyan 700
+    rdm: 'rgb(255,0,0)', // Pink 500
     sam: 'rgb(255,0,0)', // Amber 400
     whm: 'rgb(34,139,34)', // Gray 600
     sch: 'rgb(34,139,34)', // Indigo 300
