@@ -4,7 +4,7 @@ const VERSION = '0.7.22'
 const CODENAME = 'Never-Lost Word'
 
 const CONFIG_DEFAULT = {
-  lang: 'ko',
+  lang: 'en',
   style: {
     // body
     'resize-factor': 1,
@@ -17,7 +17,7 @@ const CONFIG_DEFAULT = {
     'header-bg': 'rgba(0, 0, 0, 0.5)',
     'dropdown-bg': 'rgba(31, 31, 31, 0.95)',
     'dropdown-fg': '#ddd',
-    'content-bg': '', // URL
+    'content-bg': 'https://media.giphy.com/media/NOwXcCi1i2Sbe/giphy.gif', // URL
     'content-bg-color': 'rgba(0, 0, 0, 0.5)',
     'content-bg-opacity': 1,
     'content-bg-filter': '',
@@ -132,24 +132,24 @@ const CONFIG_DEFAULT = {
   color: {
     'gauge-default': '#444',
     'gauge-opacity': '1',
-    'position-tank': 'rgb(0,127,255)',
-    'position-deal': 'rgb(255,0,0)',
-    'position-heal': 'rgb(34,139,34)',
-    pld: 'rgb(21, 28, 100)', // Indigo 900 (B -10%)
-    war: 'rgb(153, 23, 23)', // Red 900 (B -10%)
-    drk: 'rgb(136, 14, 79)', // Pink 900
-    mnk: 'rgb(255, 152, 0)', // Orange 500
+    'position-tank': 'none',
+    'position-deal': 'none',
+    'position-heal': 'none',
+    pld: 'rgb(0, 127, 255)', // Indigo 900 (B -10%)
+    war: 'rgb(0, 127, 255)', // Red 900 (B -10%)
+    drk: 'rgb(0, 127, 255)', // Pink 900
+    mnk: 'rgb(255,0,0)', // Orange 500
     drg: 'rgb(63, 81, 181)', // Indigo 500
-    brd: 'rgb(158, 157, 36)', // Lime 800
-    nin: 'rgb(211, 47, 47)', // Red 700 // 와! 시바! 진성! 닌자다!
-    smn: 'rgb(46, 125, 50)', // Green 800
-    blm: 'rgb(126, 87, 194)', // Deep Purple 400
-    mch: 'rgb(0, 151, 167)', // Cyan 700
-    rdm: 'rgb(233, 30, 99)', // Pink 500
-    sam: 'rgb(255, 202, 40)', // Amber 400
-    whm: 'rgb(117, 117, 117)', // Gray 600
-    sch: 'rgb(121, 134, 203)', // Indigo 300
-    ast: 'rgb(121, 85, 72)', // Brown 500
+    brd: 'rgbrgb(255,0,0)', // Lime 800
+    nin: 'rgbrgb(255,0,0)', // Red 700 // 와! 시바! 진성! 닌자다!
+    smn: 'rgbrgb(255,0,0)', // Green 800
+    blm: 'rgbrgb(255,0,0)', // Deep Purple 400
+    mch: 'rgbrgb(255,0,0)', // Cyan 700
+    rdm: 'rgbrgb(255,0,0)', // Pink 500
+    sam: 'rgb(255,0,0)', // Amber 400
+    whm: 'rgb(34,139,34)', // Gray 600
+    sch: 'rgb(34,139,34)', // Indigo 300
+    ast: 'rgb(34,139,34)', // Brown 500
     'smn-pet': 'rgba(46, 125, 50, 0.5)',
     'sch-pet': 'rgba(121, 134, 203, 0.5)',
     'mch-pet': 'rgba(0, 151, 167, 0.5)',
@@ -166,7 +166,7 @@ const CONFIG_DEFAULT = {
     merge_pet: true,
     myname: [],
     use_short_name: 0,
-    use_skill_aliases: true,
+    use_skill_aliases: false,
     use_tailing_pct: true
   },
   filter: {
@@ -263,46 +263,11 @@ const PET_MAPPING = {
   // TODO: add another languages
 }
 
-/*
-const APRIL_FOOL_CLASS_REMAP = {
-  'pld': 'gla', 'gla': 'pld',
-  'war': 'mrd', 'mrd': 'war',
-  'drk': 'min', 'min': 'drk',
-  'mnk': 'pug', 'pug': 'mnk',
-  'drg': 'lnc', 'lnc': 'drg',
-  'brd': 'arc', 'arc': 'brd',
-  'nin': 'rog', 'rog': 'nin',
-  'smn': 'arc', 'arc': 'smn',
-  'blm': 'thm', 'thm': 'blm',
-  'mch': 'bsm', 'bsm': 'mch',
-  'whm': 'cnj', 'cnj': 'whm',
-  'sch': 'acn', 'acn': 'sch',
-  'ast': 'fsh', 'fsh': 'ast',
-  'garuda': 'emerald', 'emerald': 'garuda',
-  'titan': 'topaz', 'topaz': 'titan',
-  'eos': 'emerald',
-  'selene': 'topaz',
-}
-*/
-
 const COLUMN_INDEX = {
   i: {
     icon: {
       v: _ => ' '
-    }/* {
-      v: _ => resolveClass(_.Job, _.name)[0],
-      f: _ => {
-        let job = _.toLowerCase()
-        if(job === 'gld') job = 'gla'
-        /*
-        if('IS_APRIL_FOOL' in window
-         && IS_APRIL_FOOL === true
-         && job in APRIL_FOOL_CLASS_REMAP) {
-          job = APRIL_FOOL_CLASS_REMAP[job]
-        }
-        /
-      }
-    } */,
+    },
     class: {
       v: _ => {
         let job = resolveClass(_.Job, _.name)[0]
